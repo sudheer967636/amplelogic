@@ -1,0 +1,16 @@
+.main-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 83px);
+
+  button{
+    background: #1e88e5;
+    color:#FFF;
+    padding: 0.5rem 3rem;
+    border:none;
+    outline:none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+  }
+}

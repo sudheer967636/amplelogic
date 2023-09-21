@@ -1,0 +1,83 @@
+header{
+  display: flex;
+  background: #FFF;
+  border-bottom: 1px solid #EEE;
+
+
+  .brand-name{
+    img{
+      width: 170px;
+      margin: 0.5rem 0 0 2rem;
+    }
+  }
+
+  nav {
+    ul{
+      display: flex;
+      gap:1rem;
+
+      li{
+        list-style: none;
+
+        a{
+          font-size: 0.87rem;
+          color:#000;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .user-info{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    padding-right: 2rem;
+
+    .select-language{
+      width:18px;
+      height: 18px;
+      background-color: #000;
+      border-radius: 50%;
+
+      img{
+        width:100%;
+        border-radius: 50%;
+      }
+    }
+
+    .notification{
+      position: relative;
+      width: 24px;
+      height: 24px;
+      margin: 0.3rem 1rem;
+
+      .mat-icon{
+        color:#bdbdbd;
+      }
+      .notification-dot{
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #F00;
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+      }
+    }
+
+    .current-user{
+      width:24px;
+      height:24px;
+      border-radius: 50%;
+
+      img{
+        width: 100%;
+        border-radius: 50%;
+        border: 2px solid #d3d3d3;
+        padding: 1px;
+      }
+    }
+  }
+}

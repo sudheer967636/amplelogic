@@ -1,0 +1,19 @@
+footer{
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 1rem 0;
+  font-size: 0.79rem;
+  color: #999;
+
+  .brand-name{
+    img{
+      width:100px;
+      margin-top: 0.2rem;
+    }
+  }
+
+  p{
+    margin: 0;
+  }
+}

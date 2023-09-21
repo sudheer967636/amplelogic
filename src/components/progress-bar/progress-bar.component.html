@@ -1,0 +1,28 @@
+<div class="progress-bar" *ngIf="isProgress"  [ngClass]="{'active':progressToggle}">
+  <div class="progress-bar-main" >
+      <div class="toggle" (click)="progressToggle = !progressToggle">
+        <mat-icon *ngIf="progressToggle">arrow_drop_down</mat-icon>
+        <mat-icon *ngIf="!progressToggle">arrow_drop_up</mat-icon>
+      </div>
+      <div class="progress-main" *ngIf="progressToggle">
+        <div class="icon">
+          <img src="./assets/rocket-icon.png" title="progress" alt="employee"/>
+          <span class="right-arrow"></span>
+        </div>
+        <div class="progress-section">
+          <div class="progress-section-head">
+            <div class="msg"><p>Migrating Data selected environment</p></div>
+            <div class="percentage">{{loadingPercent}}%</div>
+          </div>
+          <div class="prgress">
+            <mat-progress-bar
+               mode="determinate"
+               [value]="loadingPercent"
+               (animationEnd)="progressInLoading()"
+               color="primary">
+            </mat-progress-bar>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

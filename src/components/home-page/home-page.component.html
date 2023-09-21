@@ -1,0 +1,4 @@
+<div class="main-content">
+  <button (click)="startDataMigration()">Start</button>
+  <app-progress-bar [events]="dataMigrationSubject.asObservable()"></app-progress-bar>
+</div>
